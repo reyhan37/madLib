@@ -1,0 +1,12 @@
+<!-- import {NgForm} from '@angular/forms'; -->
+
+<h1>Mad Lib</h1>
+
+<form>
+  <input [(ngModel)]="noun" placeholder="noun" name="noun">
+  <input [(ngModel)]="adverb" placeholder="adverb" name="adverb">
+</form>
+
+<h2>
+  Angular is {{ adverb ? adverb:"________" }} fun! It is built using the {{ noun || "______" }} design pattern.
+</h2>
